@@ -3,9 +3,13 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Informace o naší svatbě.">
-  <title>Naše svatba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Nela a Lukáš — Save the Date, 17. 7. 2027.">
+
+  <title>Nela &amp; Lukáš — Save the Date</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -13,57 +17,110 @@
 
     body {
       margin: 0;
-      padding: 24px;
       min-height: 100vh;
+      min-height: 100dvh;
+      padding: 32px 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f7f3ed;
-      color: #39352f;
-      font-family: Georgia, "Times New Roman", serif;
-      text-align: center;
+      background: #f8f5ee;
+      color: #292722;
     }
 
     main {
       width: 100%;
-      max-width: 600px;
-      padding: 48px 24px;
-      border: 1px solid #d8cabb;
+      max-width: 480px;
+      min-height: 620px;
+      padding: 48px 20px;
+      border: 1px solid #d9cdb9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
-    .eyebrow {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 0.2em;
+    .save,
+    .date {
+      margin: 0;
+      font-family: "Times New Roman", Georgia, serif;
+      font-weight: normal;
       text-transform: uppercase;
     }
 
-    h1 {
-      margin: 28px 0 16px;
-      font-size: clamp(38px, 9vw, 64px);
+    .save {
+      font-size: clamp(42px, 12vw, 64px);
+      line-height: 1.05;
+      letter-spacing: 0.04em;
+    }
+
+    .the-date {
+      margin: 8px 0 0;
+      font-family: Georgia, serif;
+      font-size: 23px;
+      font-style: italic;
+      letter-spacing: 0.08em;
+    }
+
+    .flower {
+      width: 116px;
+      height: 116px;
+      margin: 34px 0;
+      border: 1px solid #c9b58f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ad9468;
+      font-size: 58px;
+      line-height: 1;
+    }
+
+    .names {
+      margin: 0;
+      font-family: "Times New Roman", Georgia, serif;
+      font-size: clamp(24px, 7vw, 34px);
       font-weight: normal;
+      letter-spacing: 0.06em;
     }
 
     .date {
-      font-size: 21px;
+      margin-top: 20px;
+      font-size: 19px;
+      letter-spacing: 0.12em;
     }
 
-    .message {
-      margin-top: 36px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.7;
+    .venue {
+      margin: 12px 0 0;
+      font-family: Georgia, serif;
+      font-size: 17px;
+      font-style: italic;
+      color: #756956;
+    }
+
+    @media (max-width: 380px) {
+      main {
+        min-height: 560px;
+        padding: 32px 12px;
+      }
+
+      .flower {
+        margin: 26px 0;
+      }
     }
   </style>
 </head>
+
 <body>
   <main>
-    <p class="eyebrow">Zveme vás na naši svatbu</p>
-    <h1>Nela &amp; Lukáš</h1>
-    <p class="date">17. července 2027</p>
-    <p class="message">
-      Těšíme se, že tento den oslavíme společně s vámi.
-    </p>
+    <h1 class="save">Save</h1>
+    <p class="the-date">the Date</p>
+
+    <div class="flower" aria-hidden="true">✿</div>
+
+    <p class="names">Nela &amp; Lukáš</p>
+    <p class="date">17.07.2027</p>
+    <p class="venue">Dřezická stodola</p>
   </main>
 </body>
 </html>

@@ -104,9 +104,13 @@
         padding: 32px 12px;
       }
 
-      .flower {
-        margin: 26px 0;
-      }
+    .flower {
+  display: block;
+  width: min(58vw, 220px);
+  height: auto;
+  object-fit: contain;
+  margin: 28px 0;
+}
     }
   </style>
 </head>
@@ -116,7 +120,12 @@
     <h1 class="save">Save</h1>
     <p class="the-date">the Date</p>
 
-    <div class="flower" aria-hidden="true">✿</div>
+   <img
+  class="flower"
+  src="./flower.png"
+  alt=""
+  aria-hidden="true"
+>
 
     <p class="names">Nela &amp; Lukáš</p>
     <p class="date">17.07.2027</p>
